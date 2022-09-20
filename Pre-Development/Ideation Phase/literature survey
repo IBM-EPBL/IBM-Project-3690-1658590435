@@ -1,0 +1,140 @@
+Literature Surveys
+Title :Expense Tracker
+Author : Prof Miriam Thomas , Lekshmi P , and Dr. Mahalekshmi T
+Year: 2019
+Abstract:
+The web application “Expense Tracker” is developed to manage the daily expenses in a more
+efficient and manageable way. By using this application we can reduce the manual calculations
+of the daily expenses and keep track of the expenditure. In this application, the user can provide
+his income to calculate his total expenses per day and these results will be stored for each user.
+The application has the provision to predict the income and expense for the manager using data
+mining. In this application, there are 3 logins such as admin, manager and staff. Admin has the
+privilege to add, edit, delete manager, add, edit, delete staff, and to get all custom reports. For
+managers, the privileges are to add types of expenses, verify expenses, add types of income,
+verify income and generate reports. For staff, the privileges are to add and edit expenses,
+income and calculations, and send for verifications.
+Title :Expense Manager Application
+Author: Velmurugan A, Albert Mayan J , Niranjana P and Richard Francis
+Year:2021
+Abstract:
+Mobile applications are top in user convenience and have overpassed the web applications in
+terms of popularity and usability. There are various mobile applications that provide solutions to
+manage personal and group expenses but not many of them provide a comprehensive view of
+both cases. In this paper, we develop a mobile application developed for the android platform
+that keeps record of user personal expenses, his/her contribution in group expenditures, top
+investment options, view of the current stock market, read authenticated financial news and
+grab the best ongoing offers in the market in popular categories. The proposed application
+would eliminate messy sticky notes, spreadsheets confusion and data handling inconsistency
+problems while offering the best overview of your expenses. With our application we can
+manage their expenses and decide on their budget more effectively.
+Title:Intelligent Online Budget Tracker
+Author:Girish Bekaroo and Sameer Sunhaloo
+Year:2007
+Abstract:
+We present an intelligent online budget tracker (GeniusIOBT.com) to efficiently manage
+household budgets. Our system will help to plan and track household-budget related issues
+where members of the system can securely access it anytime from anywhere via the Internet.
+The Intelligent Online Budget Tracker not only keeps track of the budget but also provides
+means to analyze data via charts and graphs as well as intelligently predicting future budgets
+and issues like bankruptcy.
+Title :Application for Tracking Personal Expense
+Author : M. Harish Kumar, G.P. Shree Harini, D. Thenmullai
+Year: 2012
+Abstract:
+Expense tracker is an android based application. This application allows the user to maintain an
+online diary. Expense tracker application will keep a track of Expenses of a user on a day-to-day
+basis. It keeps a record of your expenses and also will give you a category wise distribution of
+your expenses. With the help of this application users can track their daily/weekly/monthly
+expenses. This application will also have a feature which will help you stay on budget by
+sending alerts. This app will generate a report at the end of month to show Expense via a
+graphical representation. We also have added a special feature which will distribute expenses in
+different categories suitable for the user. An expense history will also be provided in application.
+Title:Personalized Expense Managing Assistant Using Android
+Author:N.ZahiraJahan,K.I.Vinodhini
+Year:2016
+Abstract:
+Mobile applications stood top among usability and user convenience. Many applications are
+available in the market to manage personal and group expenses. Not many applications provide
+a comprehensive view of both use cases. In this project, we develop a mobile application that
+keeps track of user personal expenses, his/her personal contribution towards group expenses;
+maintain monthly incomes, recurring and ad hoc payments. It provides information of "who owes
+who and by how much". The proposed application would eliminate sticky note, spreadsheet and
+ledger that cause confusions, data inconsistency problems while recording and splitting of
+expenses. With our application, the user can manage his expenses more effectively. This
+application will not only helps users to manage their expenses but also help marketing
+executives to plan marketing according to the needs of users
+Title:VOICE OPERATED REAL TIME EXPENSE TRACKER USING REACT JAVASCRIPT
+Author:Shobhit Sharma and Parth Verma
+Year:2021
+Abstract:
+In today’s technological society, the major role played in people’s life is played by earning. Each
+and every person requires money to live and adapt to the standard of living. The today’s
+developing generation is growing day by day and in this process of the betterment of the
+people’s living quality, the demands of making people's life efficient and quality of life higher
+money is the major demand. Therefore, in context to that particular scenario we as a web
+developer invested our technical and logical skills in making a user friendly and using the latest
+technology, we created a web application called ``The Real-time voice operated expense and
+transaction tracking” web application. The Real-time voice operated expense and transaction
+tracking application is a web application that acts as a wallet to the people and tracks all the
+transactions and expenses that a person is doing in his/her daily life. This application is a voice
+command activated application that contributes in providing user interactive UI allowing the
+people to easily add and remove the money as per the required date. This is a totally automatic
+website that works on voice commands created using React JavaScript libraries. The major
+components covered in this voice based application is React JavaScript and MongoDB
+database used to store the user data and APIs for User authentication and for data transfer to
+backend databases. A user using the application can see a wide range of features in respective
+categories. This application gives each user a satisfaction for the login and safety of each and
+every particular user also its very user friendly and user oriented application.
+Title :Expense Tracker Application
+Author : Velmurugan.R , Mrs.P.Usha
+Year: 2021
+Abstract:
+Expense tracker is an android based application. This application allows the user to maintain a
+computerized diary. Expense tracker application which will keep a track of Expenses of a user
+on a day-to-day basis. This application keeps a record of your expenses and also will give you a
+category wise distribution of your expenses. With the help of this application user can track their
+daily/weekly/monthly expenses. This application will also have a feature which will help you stay
+on budget because you know your expenses. Expense tracker application will generate report at
+the end of month to show Expense via a graphical representation. We also have added a
+special feature which will distributes your expenses in different categories suitable for the user.
+An expense history will also be provided in application.
+Title:Online Income and Expense Tracker
+Author:S. Chandini, T. Poojitha, D. Ranjith, V.J. Mohammed Akram, M.S. Vani, V. Rajyalakshmi
+Year:2019
+Abstract:
+Income and Expense Tracker will maintain data of daily, weekly, monthly, yearly expenses,
+Manages your expenses and earnings in a simple and intuitive way. Users can select the
+category of expense, enter other information like the user can capture a photo, add location,
+select amount of expense etc. And this will save to the local database. Users can view and sort
+expenses as per weekly, monthly, yearly. By using this, we can reduce the manual calculations
+for their expenses and keep track of the expenditure. In this, the user can provide his income to
+calculate his total expenses per day and these results will be stored for unique users. People
+who usually go for trips or movies with friends can use this tracker to maintain their expenses. It
+will be easy for them to share the bill in this tracker.This will display a graph as per selected
+view. And a user can enter his monthly income or limit of monthly Expense in this tr. This tracker
+system provides an integrated set of features to help you to manage your expenses and cash
+flow.
+Title:D2D EXPENSE TRACKER APPLICATION
+Author:Anjali kumar
+Year:2019
+In the present occupied and costly life we are in an extraordinary race to bring in cash.
+However, toward the end of the month's end we severed. As we are accidentally burning
+through cash on pretty much nothing and undesirable things. Along these lines, we have come
+up with a plan to follow our income. D2D App Expects to help every individual who wants to
+know their costs and spare from it. D2D is an android application which clients can execute in
+their cellphones and update their day by day expenses with the goal that they are notable to
+their costs. It gives data of "who owes who and by how much". Here clients can characterize
+their own classes for cost type like food,apparel, lease and bills where they need to enter the
+cash that has been spent and furthermore can add some extra data to determine the cost.
+Thisapplication won't just encourages clients to deal with their costs yet additionally help
+advertising heads to design showcasing as indicated by the requirements ofusers.User can
+likewise characterize cost classes.Client will have the option to see pie diagram of cost
+Title: Spending Tracker: A Smart Approach to Track Daily Expense
+Author: Uday Pratap Singh, Aakash Kumar Gupta, Dr B.Balamurugan
+Year:2020
+Abstract:
+Spending Tracker is a daily expense management system designed to track day-to-day
+expenses easily and efficiently. It helps the user to track the daily expenses of unpaid and paid
+transactions through a computerized system which eliminates the need for hardcopy output. It
+systematically maintains the record of transactions done and easily helps the user to access
+data stored.
