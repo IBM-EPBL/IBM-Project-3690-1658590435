@@ -4,6 +4,13 @@
 
 {% block content %}
     <h1>{% block title %} Welcome to my first flask page{% endblock %}</h1>
+    {% for post in posts %}
+        <a href="#">
+            <h2>{{ post['title'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ post['created'] }}</span>
+        <hr>
+    {% endfor %}
 {% endblock %}
 <head>
     <meta charset="UTF-8">
