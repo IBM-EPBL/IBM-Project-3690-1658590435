@@ -1,0 +1,215 @@
+{
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "Before we get started, I need to collect some basic information. First up, what's your **first name**?"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "Thanks! What's your **last name**?"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "Thanks!\n\nplease go through this link for more details!\n\n[link](https://file:///C:/Users/priyanka/Desktop/sample.html)"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "The hospital Branches are [link](https://file:///C:/Users/priyanka/Desktop/sample.html)"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "Do you have any other questions?"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      },
+      {
+        "options": [
+          {
+            "label": "Yes",
+            "value": {
+              "input": {
+                "text": "Yes"
+              }
+            }
+          },
+          {
+            "label": "No",
+            "value": {
+              "input": {
+                "text": "No"
+              }
+            }
+          }
+        ],
+        "response_type": "option",
+        "repeat_on_reprompt": true
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "I would like to connect with Our Agent!"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "Thanks! It was great talking with you.Have a great Day ahead."
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "I would like to connect to the Live agent! Just give me a sec!"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      },
+      {
+        "options": [
+          {
+            "label": "Yes",
+            "value": {
+              "input": {
+                "text": "Yes"
+              }
+            }
+          },
+          {
+            "label": "No",
+            "value": {
+              "input": {
+                "text": "No"
+              }
+            }
+          }
+        ],
+        "response_type": "option",
+        "repeat_on_reprompt": true
+      }
+    ]
+  }
+  {
+    "generic": [
+      {
+        "values": [
+          {
+            "text_expression": {
+              "concat": [
+                {
+                  "scalar": "Thank you for your Time! Hope have a good day!"
+                }
+              ]
+            }
+          }
+        ],
+        "response_type": "text",
+        "selection_policy": "sequential"
+      }
+    ]
+  }
