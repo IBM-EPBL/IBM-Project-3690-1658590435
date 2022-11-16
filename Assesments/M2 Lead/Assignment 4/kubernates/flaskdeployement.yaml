@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-gayathri
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-app-gayathri
+  template:
+    metadata:
+      labels:
+        app: flask-app-gayathri
+
+    spec:
+      containers:
+        - name: webpage
+          image: gayathrinrflask
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+              protocol: TCP
