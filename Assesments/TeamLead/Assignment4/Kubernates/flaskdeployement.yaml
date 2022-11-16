@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app-gayathri
+  name: flask-app-kamalikapnm
 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flask-app-gayathri
+      app: flask-app-kamalikapnm
   template:
     metadata:
       labels:
-        app: flask-app-gayathri
+        app: flask-app-kamalikapnm
 
     spec:
       containers:
         - name: webpage
-          image: gayathrinrflask
+          image: kamalikapnmflask
           imagePullPolicy: Never
           ports:
             - containerPort: 5000
