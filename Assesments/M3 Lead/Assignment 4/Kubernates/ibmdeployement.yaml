@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-web-gayathrinr
+  name: flask-web-lokeshwaranr
 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flask-web-gayathrinr
+      app: flask-web-lokeshwaranr
   template:
     metadata:
       labels:
-        app: flask-web-gayathrinr
+        app: flask-web-lokeshwaranr
 
     spec:
       containers:
