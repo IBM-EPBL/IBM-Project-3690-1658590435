@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-web-gayathrinr
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-web-gayathrinr
+  template:
+    metadata:
+      labels:
+        app: flask-web-gayathrinr
+
+    spec:
+      containers:
+        - name: flaskwebsite
+          image: jp.icr.io/flaskwebsite/website
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
