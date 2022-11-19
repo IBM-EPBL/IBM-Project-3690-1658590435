@@ -215,16 +215,18 @@ body {
 
 </head>
 <body>
-<form action=" {{ url_for('reg') }}" class="main" method="POST">
+
+
+<form action = "{{ url_for('addrec') }}" class="main" method = "POST">
   <h1>Sign Up</h1>
   <div class="un">
-    <input type="text" placeholder="Username *" required  name="username"/>
+    <input type="text" placeholder="Username *"  name="name" required />
   </div>
   <div class="em">
-    <input type="email" placeholder="E-mail *" required name="E-mail" />
+    <input type="email" placeholder="E-mail *"  name="email"  required/>
   </div>
   <div class="orp">
-    <input type="password" placeholder="Password *" required  name="password"/>
+    <input type="password" placeholder="Password *"   name="password" required/>
   </div>
   <div class="confp">
     <input type="password" placeholder="Confirm Password *" required />
@@ -232,7 +234,5 @@ body {
   <button type="submit">Sign Up</button>
   <h5>Have an Account? <a href="/"> Log In Here</h5>
     <hr />
-
-</form>
 </body>
 </html>
