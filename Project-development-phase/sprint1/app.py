@@ -42,3 +42,22 @@ def addrec():
             ibm_db.execute(prep_stmt)
 
         return render_template('loginpage.html', msg=" Data saved successfuly..")
+      @app.route('/addre', methods=['POST', 'GET'])
+def addre():
+    if request.method == 'POST':
+
+
+        email = request.form['emailid']
+        password = request.form['password']
+
+        sql = "SELECT * FROM registration WHERE email =?"
+        stmt = ibm_db.prepare(conn, sql)
+        ibm_db.bind_param(stmt, 1, email)
+        ibm_db.execute(stmt)
+        account = ibm_db.fetch_assoc(stmt)
+
+        if account:
+            return render_template('index.html')
+        else:
+            return render_template('registration.html')
+
