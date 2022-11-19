@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker App</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap"
+        rel="stylesheet">
+   <style>
+       *{
+    margin:0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background:#042159;
+    color:#77D9AB;
+}
+
+.title{
+    width: 500px;
+    color:#0869A6;
+    margin:3% auto;
+}
+
+.content{
+    width: 580px;
+    margin: 0 auto;
+    background-color:#0869A6;
+    padding: 3%;
+    padding-left: 6%;
+}
+
+.secondTitle{
+    text-align:left;
+    margin: 2% 0;
+    font-weight: 100;
+}
+
+.form{
+    padding: 5px;
+}
+
+.formLine{
+    display: inline-flex;
+    padding: 5px 0px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+    margin-right: 100px;
+}
+
+input, select{
+    width: 130px;
+    margin-left: 10px;
+}
+
+/* table style */
+table{
+    width: 100%;
+}
+
+thead{
+    background-color:#0A2558;
+    line-height: 30px;
+}
+
+/* Button */
+
+button{
+    width: 200px;
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 20px;
+    background-color: #04BF8A;
+    border-radius: 5px;
+    margin: 14px 25%;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Expense Tracker App</h1>
+    <header>
+
+    <section class="content">
+        <h3 class="secondTitle">Add a new item: </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine right">
+                    <span for="name">User id :</span>
+                    <input type="text" id="uid" name="add_expense_user_id">
+                </div>
+
+                <div class="formLine left">
+                    <span for="date">Account id:</span>
+                    <input type="text" id="aid" name="add_expense_acc_id">
+                </div>
+                <div class="formLine right">
+                    <span for="amount">Expense type:</span>
+                    <input type="text" id="exp" name="add_expense_type">
+                </div>
+                 <div class="formLine right">
+                    <span for="amount">Sub Type:</span>
+                    <input type="text" id="st" name="add_expense_sub_type">
+                </div>
+                 <div class="formLine right">
+                    <span for="amount">amount:</span>
+                    <input type="text" id="amount" name="add_expense_amount">
+                </div>
+                 <div class="formLine right">
+                    <span for="amount">date:</span>
+                    <input type="date" id="date" name="add_expense_date">
+                </div>
+                <button type="submit" class="buttonSave">Add a new expense</button>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>User_id</th>
+                    <th>Account_id</th>
+                    <th>Expense Type</th>
+                    <th>SubType</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+
+            </tbody>
+        </table>
+    </section>
+    <script>
+        document.getElementById('expForm').addEventListener('submit', addExpense);
+
+// initial array of expenses, reading from localStorage
+const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
+
+function addExpense(e){
+    e.preventDefault();
+
+    // get type, name, date, and amount
+    let uid = document.getElementById('uid').value;
+    let aid = document.getElementById('aid').value;
+    let exp = document.getElementById('exp').value;
+    let st = document.getElementById('st').value;
+    let amount = document.getElementById('amount').value;
+    let date = document.getElementById('date').value;
+
+    if(uid>0 && aid>0
+        && exp.length > 0
+        && st.length > 0
+        && amount > 0
+        && date != 0
+        ){
+        const expense = {
+            uid,
+            aid,
+            exp,
+            st,
+            amount,
+            date,
+            id: expenses.length > 0 ? expenses[expenses.length - 1].id + 1 : 1,
+        }
+
+        expenses.push(expense);
+        // localStorage
+        localStorage.setItem('expenses', JSON.stringify(expenses));
+    }
+
+    document.getElementById('expForm').reset();
+    showExpenses();
+}
+
+const showExpenses = () => {
+
+    const expenseTable = document.getElementById('expenseTable');
+
+    expenseTable.innerHTML = '';
+
+    for(let i = 0; i < expenses.length; i++){
+        expenseTable.innerHTML += `
+            <tr>
+                <td>${expenses[i].uid}</td>
+                <td>${expenses[i].aid}</td>
+                <td>${expenses[i].exp}</td>
+                <td>$${expenses[i].st}</td>
+                <td>$${expenses[i].amount}</td>
+                <td>$${expenses[i].date}</td>
+                <td><a class="deleteButton" onclick="deleteExpense(${expenses[i].id})">
+                    Delete</td>
+            </tr>
+        `;
+    }
+}
+
+const deleteExpense = (id) => {
+    for(let i = 0; i < expenses.length; i++){
+        if(expenses[i].id == id){
+            expenses.splice(i, 1);
+        }
+    }
+
+    // localStorage
+    localStorage.setItem('expenses', JSON.stringify(expenses));
+    showExpenses();
+}
+
+showExpenses();
+    </script>
+</body>
+</html>
